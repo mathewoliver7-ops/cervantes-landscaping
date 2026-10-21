@@ -1,0 +1,31 @@
+:root{--green:#2f5d34;--dark:#1d2b1f;--sand:#f6f1e7;--accent:#c98a2b;--text:#2a2a2a}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);line-height:1.6;background:#fff}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}.narrow{max-width:640px}
+header.top{background:var(--dark);color:#fff;position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:12px;padding-bottom:12px;gap:12px}
+header.top a{color:#fff;text-decoration:none}.brand{font-weight:700;font-size:1.1rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:1rem}
+.btn.alt{background:transparent;border:2px solid #fff}
+.hero{background:linear-gradient(rgba(29,43,31,.72),rgba(29,43,31,.72)),url(images/1.webp) center/cover;color:#fff;padding:90px 0}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 16px}
+.hero p{max-width:560px;font-size:1.15rem}.hero .btn{margin:8px 8px 0 0}
+.section{padding:64px 0}.section.alt{background:var(--sand)}
+h2{font-size:2rem;margin:0 0 24px;color:var(--green)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:#fff;border-radius:8px;padding:22px;box-shadow:0 1px 6px rgba(0,0,0,.1)}
+.card h3{margin:0 0 8px;color:var(--green)}
+.about{display:grid;gap:32px;grid-template-columns:1fr 1fr;align-items:center}
+.about img,.gallery img{border-radius:8px;width:100%;height:100%;object-fit:cover}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:32px}
+.gallery img{aspect-ratio:4/3}
+blockquote{margin:0;background:#fff;padding:22px;border-radius:8px;border-left:4px solid var(--accent)}
+blockquote footer{margin-top:10px;font-weight:600}
+.contact{display:grid;gap:32px;grid-template-columns:1fr 1fr}
+form label{display:block;margin-bottom:14px;font-weight:600}
+form input,form select,form textarea{width:100%;padding:10px;margin-top:4px;border:1px solid #bbb;border-radius:6px;font:inherit}
+.hp{position:absolute;left:-9999px}
+footer.site{background:var(--dark);color:#cfd8cf;text-align:center;padding:28px 0;font-size:.9rem}
+footer.site a{color:#cfd8cf}.credit{margin-top:10px}.credit a{display:inline-flex;align-items:center;gap:8px}
+@media(max-width:760px){.about,.contact{grid-template-columns:1fr}.hero{padding:60px 0}header.top .brand{font-size:1rem}}
